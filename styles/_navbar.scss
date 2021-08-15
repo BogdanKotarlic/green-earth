@@ -1,0 +1,76 @@
+@import 'media-queries';
+
+%align {
+    align-items: center;
+    display: flex;
+}
+
+header {
+    @extend %align;
+    padding: 15px 20px;
+    justify-content: space-between;
+
+    .logo a img {
+        height: 50%;
+        width: 75%;
+    }
+
+    nav {
+        text-align: right;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: 100%;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                a:hover {
+                    color: #6ea1b1;
+                }
+
+                a, .login a:visited {
+                    font-size: 18px;
+                    color: #002f9d;
+                }
+            }
+        }
+
+        .login {
+            font-weight: normal;
+
+            a, a:visited {
+                color: #021f59;
+            }
+
+            a:hover {
+                color: #6ea1b1;
+            }
+
+            a img {
+                height: 75%;
+                width: 50%;
+            }
+
+            @include small {
+                order: 1;
+            }
+        }
+
+        @include small {
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+    }
+}
+.navbar {
+    width: 60vw;
+    @include small {
+        width: 300px;
+    }
+}

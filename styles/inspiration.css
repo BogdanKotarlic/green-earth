@@ -1,0 +1,22 @@
+.inspiration h2 {
+  font-size: 24px;
+  color: #002f9d;
+  line-height: 1.607;
+  text-align: center;
+  margin: 20px;
+  font-weight: normal;
+}
+
+.inspiration h2 a {
+  font-weight: bold;
+  border-bottom: 2px dashed #002f9d;
+}
+
+.inspiration h2 a:link, .inspiration h2 a:visited {
+  color: #002f9d;
+}
+
+.inspiration h2 a:hover {
+  color: #49657c;
+}
+/*# sourceMappingURL=inspiration.css.map */

@@ -1,0 +1,390 @@
+header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header {
+  padding: 15px 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .logo a img {
+  height: 50%;
+  width: 75%;
+}
+
+header nav {
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a:hover {
+  color: #6ea1b1;
+}
+
+header nav ul li a, header nav ul li .login a:visited {
+  font-size: 18px;
+  color: #002f9d;
+}
+
+header nav .login {
+  font-weight: normal;
+}
+
+header nav .login a, header nav .login a:visited {
+  color: #021f59;
+}
+
+header nav .login a:hover {
+  color: #6ea1b1;
+}
+
+header nav .login a img {
+  height: 75%;
+  width: 50%;
+}
+
+@media screen and (min-width: 600px) {
+  header nav .login {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  header nav {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.navbar {
+  width: 60vw;
+}
+
+@media screen and (min-width: 600px) {
+  .navbar {
+    width: 300px;
+  }
+}
+
+.slider-container {
+  position: relative;
+  padding: 0px;
+  height: 38vw;
+}
+
+.slider-container .slider img {
+  display: none;
+  width: 100vw;
+}
+
+.slider-container .slider img.active {
+  display: block;
+}
+
+.booknow-mobile {
+  display: inline-block;
+  width: 100vw;
+  height: auto;
+}
+
+.enjoy-mobile {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.slider-arrows-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 40%;
+  right: 40px;
+  width: 115px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.slider-arrows-mobile img:hover, .slider-arrows-desktop img:hover {
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+  opacity: 0.7;
+  cursor: pointer;
+  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 30px;
+}
+
+.button-mobile {
+  top: 25vw;
+  left: 10%;
+  position: absolute;
+}
+
+.booknow-desktop {
+  display: none;
+}
+
+.button-desktop img:hover, .button-mobile img:hover {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  opacity: 0.7;
+  cursor: pointer;
+  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (min-width: 768px) {
+  .booknow-mobile {
+    display: none;
+  }
+  .booknow-desktop {
+    display: inline-block;
+    width: 100vw;
+    top: 50%;
+    height: auto;
+  }
+  .enjoy-desktop {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+  }
+  .slider-arrows-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 40%;
+    right: 40px;
+    width: 115px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .button-desktop {
+    top: 22vw;
+    left: 10%;
+    position: absolute;
+  }
+}
+
+.usp h5 {
+  color: #757575;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.usp h1 {
+  color: #002f9d;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1.185;
+  text-align: center;
+}
+
+.usp .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #021f59;
+  line-height: 1;
+  text-align: left;
+}
+
+.usp .item img {
+  height: 50px;
+}
+
+.usp .item .inner-item {
+  padding-left: 15px;
+  margin: 0px;
+  padding-bottom: 5px;
+}
+
+.usp .item .inner-item span {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.usp .item .inner-item p {
+  margin-top: 5px;
+}
+
+@media screen and (min-width: 600px) {
+  .usp .inner-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    max-width: 700px;
+    margin: auto;
+  }
+  .usp .inner-wrap .item {
+    -ms-flex-preferred-size: 46%;
+        flex-basis: 46%;
+    margin: 2%;
+  }
+}
+
+.offers {
+  background-color: #002f9d;
+  margin: auto;
+  padding: 0.1px 0px;
+}
+
+.offers .show {
+  font-size: 25px;
+  text-align: center;
+  color: #ffffff;
+  padding: 20px 20px 0px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.inner-offers .offer {
+  max-width: 280px;
+  height: 375px;
+  background-color: #ffffff;
+  margin: 30px auto;
+}
+
+.inner-offers .offer img {
+  width: 100%;
+}
+
+.inner-offers .offer .label-container {
+  position: relative;
+}
+
+.inner-offers .offer .label-container .label {
+  position: absolute;
+  width: 210px;
+  left: -12px;
+  top: 20px;
+}
+
+.inner-offers .offer .wrap-tag {
+  width: 120px;
+  margin-left: 25px;
+}
+
+.inner-offers .offer .wrap-tag h3, .inner-offers .offer .wrap-tag p, .inner-offers .offer .wrap-tag a {
+  margin: 0;
+}
+
+.inner-offers .offer .wrap-tag h3 {
+  color: #021f59;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.inner-offers .offer .wrap-tag p {
+  color: #021f59;
+  margin-bottom: 40px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.inner-offers .offer .wrap-tag a h3 {
+  color: #002f9d;
+}
+
+.inner-offers .offer .wrap-tag a:hover h3 {
+  color: #6ea1b1;
+}
+
+@media screen and (min-width: 768px) {
+  .offers .show {
+    font-size: 15px;
+    text-align: left;
+    padding: 30px 80px 10px 80px;
+  }
+  .offers .inner-offers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 50px;
+  }
+  .offers .offer {
+    width: 355px;
+    height: 365px;
+    margin: 10px;
+  }
+}
+
+.inspiration h2 {
+  font-size: 30px;
+  color: #002f9d;
+  line-height: 1.607;
+  text-align: center;
+  margin: 20px;
+  font-weight: normal;
+}
+
+.inspiration h2 a {
+  font-weight: bold;
+  border-bottom: 2px dashed #002f9d;
+}
+
+.inspiration h2 a:link, .inspiration h2 a:visited {
+  color: #002f9d;
+}
+
+.inspiration h2 a:hover {
+  color: #6ea1b1;
+}
+
+* {
+  text-decoration: none;
+}
+
+body {
+  margin: 0px;
+  font-family: "Open Sans";
+}
+
+.wrap {
+  padding: 0px 20px;
+}
+/*# sourceMappingURL=style.css.map */
