@@ -1,7 +1,7 @@
 const changeSlide = direction => {
-    const currentImg = $('.active');
-    const nextImg = currentImg.next();
-    const previousImg = currentImg.prev();
+    var currentImg = $('.active');
+    var nextImg = currentImg.next();
+    var previousImg = currentImg.prev();
   
   
     if (direction == 'next') {
@@ -18,10 +18,12 @@ const changeSlide = direction => {
     currentImg.removeClass('active');
 }
 
-const tabButtons = document.querySelectorAll(".buttonContainer button")
-const tabs = document.querySelectorAll(".tabContainer .tab")
 
-const showPanel = (panelIndex, colorCode) => {
+
+const showPanel = (panelIndex) => {
+  var tabButtons = document.querySelectorAll(".buttonContainer button")
+  var tabs = document.querySelectorAll(".tabContainer .tab")
+
   tabButtons.forEach(e = node => {
     node.style.backgroundColor = "";
     node.style.borderTop = "none";
@@ -39,7 +41,6 @@ const showPanel = (panelIndex, colorCode) => {
   });
 
   tabs[panelIndex].style.display = "block";
-  tabs[panelIndex].style.backgroundColor = "colorCode";
 }
 
 showPanel(0);
