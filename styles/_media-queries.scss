@@ -15,3 +15,9 @@
         @content;
     }
 }
+
+@mixin sub-small {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
