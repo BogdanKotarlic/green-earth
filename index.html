@@ -40,11 +40,7 @@
     </header>
     <!--Hero Section-->
     <div class="slider-container">
-        <div class="slider">
-            <img src="./images/stock1.jpg" alt="stock1" class="active">
-            <img src="./images/stock2.jpg" alt="stock2">
-            <img src="./images/stock3.jpg" alt="stock3">
-        </div>
+        <div class="slider"></div>
         <!--For mobile and tablet-->
         <div class="booknow-mobile">
             <img src="./images/enjoy_mobile.png" class="enjoy-mobile">
@@ -330,7 +326,51 @@
             </div>
         </div>
     </footer>
-    <script src="./scripts/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./scripts/script.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Because of CORS policy works only with live server
+            var db = [];
+            var json = (function () {
+                var json = null;
+                $.ajax({
+                    'async': false,
+                    'global': false,
+                    'url': './json/db.json',
+                    'dataType': 'json',
+                    'success': function (data) {
+                        json = data;
+                    }
+                });
+                return json;
+            })
+            db = json();
+
+            // Version without live server
+            // var db = [
+            //     {
+            //         "name": "stock1",
+            //         "path": "./images/stock1.jpg",
+            //         "description": "stock1 img"
+            //     },
+            //     {
+            //         "name": "stock2",
+            //         "path": "./images/stock2.jpg",
+            //         "description": "stock2 img"
+            //     },
+            //     {
+            //         "name": "stock3",
+            //         "path": "./images/stock3.jpg",
+            //         "description": "stock3 img"
+            //     }
+            // ]
+
+            $.each(db, function (index, value) {
+                $(".slider").append("<img src='"+value.path+"'/>")
+            });
+            $('.slider img:first-child').addClass("active");
+        });
+    </script>
 </body>
 </html>

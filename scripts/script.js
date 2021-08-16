@@ -1,7 +1,7 @@
-function changeSlide(direction) {
-    var currentImg = $('.active');
-    var nextImg = currentImg.next();
-    var previousImg = currentImg.prev();
+const changeSlide = direction => {
+    const currentImg = $('.active');
+    const nextImg = currentImg.next();
+    const previousImg = currentImg.prev();
   
   
     if (direction == 'next') {
@@ -18,27 +18,28 @@ function changeSlide(direction) {
     currentImg.removeClass('active');
 }
 
-var tabButtons = document.querySelectorAll(".buttonContainer button")
-var tabPanels = document.querySelectorAll(".tabContainer .tab")
+const tabButtons = document.querySelectorAll(".buttonContainer button")
+const tabs = document.querySelectorAll(".tabContainer .tab")
 
-function showPanel(panelIndex, colorCode) {
-  tabButtons.forEach(function (node) {
+const showPanel = (panelIndex, colorCode) => {
+  tabButtons.forEach(e = node => {
     node.style.backgroundColor = "";
     node.style.borderTop = "none";
     node.style.color = "";
     node.style.fontWeight = "normal"
   });
+
   tabButtons[panelIndex].style.backgroundColor = "#ffffff";
   tabButtons[panelIndex].style.color = "#002f9d";
   tabButtons[panelIndex].style.borderTop = "5px solid #38bdff";
   tabButtons[panelIndex].style.fontWeight = "bold"
 
-  tabPanels.forEach(function (node) {
+  tabs.forEach(e = node => {
     node.style.display = "none";
   });
 
-  tabPanels[panelIndex].style.display = "block";
-  tabPanels[panelIndex].style.backgroundColor = "colorCode";
-
+  tabs[panelIndex].style.display = "block";
+  tabs[panelIndex].style.backgroundColor = "colorCode";
 }
+
 showPanel(0);
