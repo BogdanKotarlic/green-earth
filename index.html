@@ -367,7 +367,7 @@
             // ]
 
             $.each(db, function (index, value) {
-                $(".slider").append("<img src='"+value.path+"'/>")
+                $(".slider").append("<img src='"+value.path+"' alt='"+value.description+"'/>")
             });
             $('.slider img:first-child').addClass("active");
         });

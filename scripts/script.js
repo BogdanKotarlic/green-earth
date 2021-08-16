@@ -18,8 +18,6 @@ const changeSlide = direction => {
     currentImg.removeClass('active');
 }
 
-
-
 const showPanel = (panelIndex) => {
   var tabButtons = document.querySelectorAll(".buttonContainer button")
   var tabs = document.querySelectorAll(".tabContainer .tab")
