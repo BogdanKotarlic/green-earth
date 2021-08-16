@@ -767,7 +767,8 @@ header nav .login a img {
 }
 
 body {
-  margin: 0px;
+  margin: 0;
+  padding: 0;
   font-family: "Open Sans";
 }
 
