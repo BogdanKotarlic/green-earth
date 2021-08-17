@@ -1,0 +1,30 @@
+{
+  "name": "green-earth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BogdanKotarlic/green-earth.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BogdanKotarlic/green-earth/issues"
+  },
+  "homepage": "https://github.com/BogdanKotarlic/green-earth#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/register": "^7.15.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-terser": "^2.0.1",
+    "sass": "^1.38.0"
+  }
+}
