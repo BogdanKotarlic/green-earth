@@ -1,13 +1,14 @@
 @import 'media-queries';
+@import 'colors';
 
 .classes {
-    background-color: #021f59;
+    background-color: $dark-blue;
     margin: auto;
     padding: 0.1px 0px;
 
     .inner-classes {
         text-align: center;
-        color: #ffffff;
+        color:white;
         padding: 20px 20px 0px 20px;
         max-width: 1024px;
         margin: 0 auto;
@@ -20,28 +21,28 @@
 
         h1 {
             font-size: 32px;
-            color: #38bdff;
+            color: $light-blue;
             font-weight: bold;
             line-height: 0.906;
             margin: 17px auto;
         }
 
         a {
-            color: #38bdff;
+            color: $light-blue;
             font-weight: bold;
-            border-bottom: 2px dashed #38bdff;
+            border-bottom: 2px dashed $light-blue;
         }
 
         a:hover {
-            color: #6ea1b1;
+            color: $hover;
         }
     }
 }
   
 .tab {
     margin: 40px auto;
-    background-color: #ffffff;
-    border-top: 5px solid #002f9d;
+    background-color: white;
+    border-top: 5px solid $dark-blue;
     display: block;
 
     img {
@@ -50,7 +51,7 @@
 
     h2 {
         font-size: 18px;
-        color: #002f9d;
+        color: $dark-blue;;
         font-weight: bold;
         line-height: 1.2;
         margin: 0;
@@ -115,8 +116,8 @@
         }
 
         button:hover {
-            background-color: #38bdff;
-            color: #ffffff;
+            background-color: $light-blue;
+            color: white;
         }
    }
   

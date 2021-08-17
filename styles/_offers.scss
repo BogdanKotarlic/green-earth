@@ -1,14 +1,15 @@
 @import 'media-queries';
+@import 'colors';
 
 .offers{
-    background-color: #002f9d;
+    background-color: $blue;
     margin: auto;
     padding: 0.1px 0px;
 
     .show{
             font-size: 25px;
             text-align: center;
-            color: #ffffff;
+            color: white;
             padding: 20px 20px 0px 20px;
             max-width: 1200px;
             margin: 0 auto;
@@ -18,7 +19,7 @@
 .inner-offers .offer{
     max-width: 280px;
     height: 375px;
-    background-color: #ffffff;
+    background-color: white;
     margin: 30px auto;
 
     img {
@@ -45,24 +46,24 @@
         }
 
         h3 {
-            color: #021f59;
+            color: $dark-blue;
             font-size: 20px;
             margin-top: 20px;
         }
 
         p {
-            color: #021f59;
+            color: $dark-blue;
             margin-bottom: 40px;
             font-size: 20px;
             text-align: left;
         }
 
         a h3 {
-            color: #002f9d;
+            color: $blue;
         }
 
         a:hover h3 {
-            color: #6ea1b1;
+            color: $hover;
         }
     }
 }

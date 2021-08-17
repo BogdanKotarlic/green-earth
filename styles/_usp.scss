@@ -1,4 +1,5 @@
 @import 'media-queries';
+@import 'colors';
 
 .usp {
     h5 {
@@ -9,7 +10,7 @@
     }
 
     h1 {
-        color: #002f9d;
+        color: $blue;
         font-weight: bold;
         font-size: 40px;
         line-height: 1.185;
@@ -18,7 +19,7 @@
 
     .item {
         display: flex;
-        color: #021f59;
+        color: $dark-blue;
         line-height: 1;
         text-align: left;
 

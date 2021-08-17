@@ -1,4 +1,5 @@
 @import 'media-queries';
+@import 'colors';
 
 %align {
     align-items: center;
@@ -31,12 +32,12 @@ header {
 
             li {
                 a:hover {
-                    color: #6ea1b1;
+                    color: $hover;
                 }
 
                 a, .login a:visited {
                     font-size: 18px;
-                    color: #002f9d;
+                    color: $blue;
                 }
             }
         }
@@ -45,11 +46,11 @@ header {
             font-weight: normal;
 
             a, a:visited {
-                color: #021f59;
+                color: $dark-blue;
             }
 
             a:hover {
-                color: #6ea1b1;
+                color: $hover;
             }
 
             a img {

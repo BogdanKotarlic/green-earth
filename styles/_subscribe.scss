@@ -1,12 +1,13 @@
 @import 'media-queries';
+@import 'colors';
 
 .subscribe {
-    background-color: #002f9d;
+    background-color: $blue;
 
     h1 {
         padding: 0;
         margin: 0;
-        color: #ffffff;
+        color: white;
         font-size: 22px;
         font-weight: normal;
     }
@@ -19,7 +20,7 @@
 .sub {
     input[type=text] {
         border: 0;
-        border-bottom: 2px solid #ffffff;
+        border-bottom: 2px solid white;
         height: 40px;
         width: 100%;
         background:transparent;
@@ -29,10 +30,10 @@
         margin-top: 25px;
         height: 50px;
         width: 100%;
-        background-color: #ffffff;
+        background-color: white;
         border: 0;
         font-size: 22px;
-        color: #002f9d;
+        color: $blue;
         font-weight: bold;
     }
 
@@ -53,7 +54,7 @@
 
         h1 {
             flex-basis: 40%;
-            color: #ffffff;
+            color: white;
             font-size: 22px;
             font-weight: normal;
         }
@@ -66,10 +67,10 @@
 
         input[type=submit] {
             flex-basis: 27%;
-            background-color: #002f9d;
+            background-color: $blue;
             font-size: 18px;
-            color: #ffff;
-            border-bottom: 2px solid #ffff;
+            color: white;
+            border-bottom: 2px solid white;
             padding: 0;
             margin: 0;
             height: 34px;
@@ -86,10 +87,10 @@
 
         input[type=text] {
             border: 0;
-            border-bottom: 2px solid #ffffff;
+            border-bottom: 2px solid white;
             height: 30px;
             background: transparent;
-            color: #ffff;
+            color: white;
             outline: none;
         }
     }
