@@ -1,7 +1,7 @@
 const changeSlide = direction => {
-    var currentImg = $('.active');
-    var nextImg = currentImg.next();
-    var previousImg = currentImg.prev();
+    const currentImg = $('.active');
+    const nextImg = currentImg.next();
+    const previousImg = currentImg.prev();
   
   
     if (direction == 'next') {
@@ -19,8 +19,8 @@ const changeSlide = direction => {
 }
 
 const showPanel = (panelIndex) => {
-  var tabButtons = document.querySelectorAll(".buttonContainer button")
-  var tabs = document.querySelectorAll(".tabContainer .tab")
+  const tabButtons = document.querySelectorAll(".buttonContainer button")
+  const tabs = document.querySelectorAll(".tabContainer .tab")
 
   tabButtons.forEach(e = node => {
     node.style.backgroundColor = "";
