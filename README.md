@@ -1,5 +1,5 @@
 # green-earth
-Single responsive page (HTML5/SCSS/JS/JQUERY/GULP)
+Single responsive page (HTML5/SCSS/JS/JQUERY/GULP) - ** Practice**
 
 # About
 Single responsive page Green Earth.
